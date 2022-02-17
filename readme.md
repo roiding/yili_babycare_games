@@ -1,3 +1,7 @@
+<p align="center"><img src="https://github.com/roiding/yili_babycare_games/actions/workflows/docker.yml/badge.svg"/></p>
+
+****
+
 ## 冰墩墩-伊利积分游戏
 
 为了方便自己不再需要用postman一次次的做游戏，写了个简易版的游戏脚本
@@ -16,9 +20,14 @@
 
 
 
-<span style="font-size:200%;color:red">不是专门写python的，就是为了图省事，边百度各种函数用法边写的，写的烂别喷</span>
+<p style="font-size:200%;color:red">不是专门写python的，就是为了图省事，边百度各种函数用法边写的，写的烂别喷</p>
 
 
 
-<span style="font-size:300%;color:blue">有大能的话，可以帮忙把Authorization自动获取也做个补充</span>
+<p style="font-size:300%;color:blue">有大能的话，可以帮忙把Authorization自动获取也做个补充</p>
 
+
+### 已更新Docker版本
+```bash
+docker run -d -e AUTHORIZATION=XXXX ghcr.io/roiding/yili-babycare-game:latest
+```
