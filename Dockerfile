@@ -4,8 +4,10 @@ MAINTAINER Roi Ding "dingran@ran-ding.ga"
 # ENV AUTHORIZATION=XXXX
 
 WORKDIR /usr/yili-carebaby-game
+
 COPY shuafen.py shuafen.py
+COPY jiankong.py jiankong.py
 
 RUN pip install requests
 
-ENTRYPOINT python ./shuafen.py $AUTHORIZATION
+ENTRYPOINT start.sh
