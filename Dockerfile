@@ -7,6 +7,7 @@ WORKDIR /usr/yili-carebaby-game
 
 COPY shuafen.py shuafen.py
 COPY jiankong.py jiankong.py
+COPY start.sh start.sh
 
 RUN pip install requests
 

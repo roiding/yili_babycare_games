@@ -33,11 +33,11 @@ def checkCount(token):
 if __name__ == '__main__':
     # 输入了token值
     if len(sys.argv)==2:
-        print("开始执行钻石获取")
+        print("开始执行库存监控")
         checkCount(sys.argv[1])
     elif len(sys.argv)==1:
-        authorization=input("请输入你的微信登录Authorization值:")
-        print("开始执行钻石获取")
+        authorization=input("请输入你的Server酱SendKey值:")
+        print("开始执行库存监控")
         checkCount(authorization)
     else:
         print("本程序只支持1个参数，请勿多输")
