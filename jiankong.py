@@ -24,8 +24,8 @@ def checkCount(token):
             # 执行通知
             data = {"title": "有货了", "desp":"赶快去抢啊，快点的"}
             url="https://sctapi.ftqq.com/"+token+".send"
-            requests.post(
-                url, json=data)
+            data=requests.post(
+                url, params=data,proxies={'https': None})
             break
         time.sleep(30)
 
