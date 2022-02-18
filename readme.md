@@ -26,8 +26,16 @@
 
 <p style="font-size:300%;color:blue">有大能的话，可以帮忙把Authorization自动获取也做个补充</p>
 
-
 ### 已更新Docker版本
+
+### 已更新库存监控
+
+* AUTHORIZATION 为游戏权限
+* SENDKEY为大哥们的[Server酱](https://sct.ftqq.com/)的SendKey，懂得都懂，我就不说咋生成了
+  * 两个可以都写 也可以只用其中一个功能
+
+
 ```bash
-docker run -d -e AUTHORIZATION=XXXX ghcr.io/roiding/yili-babycare-game:latest
+docker run -d -e AUTHORIZATION=XXXX -e SENDKEY=XXXX ghcr.io/roiding/yili-babycare-game:latest
 ```
+
