@@ -36,8 +36,8 @@ if __name__ == '__main__':
         print("开始执行库存监控")
         checkCount(sys.argv[1])
     elif len(sys.argv)==1:
-        authorization=input("请输入你的Server酱SendKey值:")
+        sendKey=input("请输入你的Server酱SendKey值:")
         print("开始执行库存监控")
-        checkCount(authorization)
+        checkCount(sendKey)
     else:
         print("本程序只支持1个参数，请勿多输")
