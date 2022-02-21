@@ -5,6 +5,16 @@ MAINTAINER Roi Ding "dingran@ran-ding.ga"
 # ENV SENDKEY=XXX
 WORKDIR /usr/yili-carebaby-game
 
+# 修正时区
+ENV TZ=Asia/Shanghai \
+    DEBIAN_FRONTEND=noninteractive
+RUN apt update \
+    && apt install -y tzdata \
+    && ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime \
+    && echo ${TZ} > /etc/timezone \
+    && dpkg-reconfigure --frontend noninteractive tzdata \
+    && rm -rf /var/lib/apt/lists/*
+
 COPY shuafen.py shuafen.py
 COPY jiankong.py jiankong.py
 COPY start.sh start.sh

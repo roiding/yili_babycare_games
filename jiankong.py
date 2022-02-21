@@ -11,7 +11,7 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 logging.basicConfig(level=logging.INFO,
-                    filename=os.path.join(os.getcwd(), 'log.txt'),
+                    filename=os.path.join(os.getcwd(), 'logs/jiankong.log'),
                     format='%(asctime)s - %(levelname)s: %(message)s')
 
 
