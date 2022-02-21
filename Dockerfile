@@ -10,6 +10,6 @@ COPY jiankong.py jiankong.py
 COPY start.sh start.sh
 
 
-RUN pip install requests && chmod +x start.sh && mkdir -p /usr/yili-carebaby-game/logs
+RUN pip install requests &&chmod +x start.sh&& mkdir -p /usr/yili-carebaby-game/logs
 
-ENTRYPOINT /usr/yili-carebaby-game/start.sh
+CMD ["/usr/yili-carebaby-game/start.sh"]
