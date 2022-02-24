@@ -10,6 +10,7 @@ ENV TZ=Asia/Shanghai \
     DEBIAN_FRONTEND=noninteractive
 RUN apt update \
     && apt install -y tzdata \
+    && apt install -y procps
     && ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime \
     && echo ${TZ} > /etc/timezone \
     && dpkg-reconfigure --frontend noninteractive tzdata \

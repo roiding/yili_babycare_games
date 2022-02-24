@@ -32,7 +32,7 @@ closePython(){
 while true
 do  
     
-    if [ -n "${pid1}" -o -d "/proc/${pid1}" ] || [ -n "${pid2}" -o -d "/proc/${pid2}" ]
+    if [ -n "${pid1}" -a -d "/proc/${pid1}" ] || [ -n "${pid2}" -a -d "/proc/${pid2}" ]
     then
         sleep 1s
     else
